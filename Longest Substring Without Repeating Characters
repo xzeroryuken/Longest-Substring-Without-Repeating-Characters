@@ -1,12 +1,8 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        stringSet = set() #create an empty set to check when we encounter duplicate chars
-        l = 0 #initialzing the left side of the windowed list
-        res = 0 #we use result as a counter to count how many non repeating characters there are
+        stringSet = set()
+        l = 0 
+        res = 0 
 
         for r in range(len(s)): #
             while s[r] in stringSet:
